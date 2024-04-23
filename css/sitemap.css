@@ -1,0 +1,117 @@
+@import url('./global-style.css');
+
+.title {
+    width: 100%;
+    height: 75vh;
+    background: url('../src/images/sitemap-images/background.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title h1 {
+    color: var(--10color);
+    letter-spacing: 1.5rem;
+    border: 5px solid var(--10color);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px var(--60color);
+    text-shadow: 0 0 5px var(--60color);
+    cursor: default;
+    user-select: none;
+    padding: 0 0 0 20px;
+}
+
+.svg-container {
+    width: 100%;
+    height: 100vh;
+    margin: 10rem 0 8rem 0;
+    padding-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.svg-container svg {
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+}
+
+.separator {
+    width: 100%;
+    border-right: 75vw solid transparent;
+    border-bottom: 15vw solid var(--60color);
+    margin: -14.9vw;
+    z-index: 1;
+}
+
+.svg-container svg rect {
+    fill: var(--60color);
+    stroke: var(--10color);
+    stroke-width: 3;
+}
+
+.svg-container svg rect:hover {
+    fill: var(--10color);
+    transition: fill 0.5s;
+}
+
+.svg-container svg circle {
+    fill: var(--60color);
+    stroke: var(--10color);
+    stroke-width: 3;
+}
+
+.svg-container svg circle:hover {
+    fill: var(--10color);
+    transition: fill 0.5s;
+}
+
+.svg-container svg text {
+    fill: #f1f1f1;
+    text-shadow: 0 0 5px #f1f1f1;
+    text-anchor: middle;
+}
+
+.svg-container svg text:hover {
+    fill: var(--10color);
+    text-shadow: none;
+    transition: fill 0.5s;
+}
+
+.svg-container svg text:hover circle {
+    stroke: var(--10color);
+}
+
+.svg-container svg polyline {
+    fill: none;
+    stroke: var(--10color);
+    stroke-width: 3;
+}
+
+#home-circle {
+    stroke-width: 4;
+}
+
+/* back to top button */
+
+.scrollTop {
+    position: sticky;
+    bottom: 10px;
+    padding: 5px;
+}
+
+.scrollTop i {
+    background-color: transparent;
+    opacity: 0;
+    margin-left: 95%;
+    cursor: pointer;
+    color: var(--white);
+    border-radius: 50%;
+    margin-right: 2%;
+    padding: 5px;
+    transition: all 0.25s;
+}
+
+.scrollTop i:hover {
+    background-color: var(--10color);
+    transition: all 0.5s;
+}

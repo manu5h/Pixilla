@@ -1,0 +1,232 @@
+.headerGallery {
+    background-image: url(../src/homeWallpaper.png);
+    background-size: cover;
+    height: 600px;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.description video {
+    width: 100%;
+    z-index: -1;
+}
+
+.description {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.description p {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.action-games-home {
+    position: relative;
+    width: 100%;
+}
+
+.action-button {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    font-size: 20px;
+}
+
+.video-box video {
+    width: 100%;
+    height: 100%;
+}
+
+.top-gaming-genres h1 {
+    margin: 20px;
+}
+
+.action-games-home img {
+    width: 100%;
+}
+
+.action-games-home {
+    position: relative;
+    width: 100%;
+}
+
+.action-button {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    font-size: 20px;
+}
+
+.action-button a {
+    color: white;
+}
+
+.sports-games-home img {
+    width: 100%;
+}
+
+.sports-games-home {
+    position: relative;
+    width: 100%;
+}
+
+.sports-button {
+    position: absolute;
+    top: 60%;
+    left: 79%;
+    font-size: 20px;
+}
+
+.sports-button a {
+    color: white;
+}
+
+.horror-games-home img {
+    width: 100%;
+}
+
+.horror-games-home {
+    position: relative;
+    width: 100%;
+}
+
+.horror-button {
+    position: absolute;
+    top: 65%;
+    left: 7%;
+    font-size: 20px;
+}
+
+.horror-button a {
+    color: white;
+}
+
+.racing-games-home img {
+    width: 100%;
+}
+
+.racing-games-home {
+    position: relative;
+    width: 100%;
+}
+
+.racing-button {
+    position: absolute;
+    top: 65%;
+    left: 78%;
+    font-size: 20px;
+}
+
+.racing-button a {
+    color: white;
+}
+
+.partners h1 {
+    margin: 20px;
+}
+
+.partners {
+    display: flex;
+    width: 100%;
+}
+
+.partners img {
+    width: 100%;
+}
+
+.EA {
+    margin-left: 70px;
+}
+
+.Enix {
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.Epic {
+    margin: 0px;
+}
+
+.Activision {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 25px;
+}
+
+.Rockstar {
+    margin-left: 30px;
+}
+
+@media(max-width: 1200px) {
+    h1 {
+        font-size: 80px;
+    }
+    .description p {
+        font-size: 20px;
+    }
+
+    .action-button,
+    .sports-button,
+    .horror-button,
+    .racing-button {
+        padding: 10px 20px;
+    }
+
+    .action-button,
+    .sports-button,
+    .horror-button,
+    .racing-button a {
+        font-size: 20px;
+    }
+
+    .Activision {
+        margin-top: 0px;
+    }
+
+    .EA {
+        margin-left: 0px;
+    }
+}
+
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 60px;
+    }
+    .description p {
+        font-size: 10px;
+    }
+
+    .action-button,
+    .sports-button,
+    .horror-button,
+    .racing-button {
+        padding: 5px 10px;
+    }
+
+    .action-button,
+    .sports-button,
+    .horror-button,
+    .racing-button a {
+        font-size: 10px;
+    }
+
+    .Activision {
+        margin-top: 0px;
+    }
+
+    .EA {
+        margin-left: 0px;
+    }
+}

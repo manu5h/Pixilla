@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.bottom{
+    background-color: rgb(70, 105, 114);
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center; 
+    height: 125%; 
+}
+h1{
+    padding-top: 100px;
+}
+h3{
+    font-size: var(--header5);
+}
+.container .student{
+    text-align: left;
+    padding-top: 30px;
+    
+}
+.container{
+    width: 65%;
+    height: 120%;
+    margin: auto;
+    margin-top: 5px;
+    align-items: center;
+    background-color: var(--60color);
+    text-align: center;
+    font-family: 'stylish';
+    src: url('../fonts/JosefinSans-VariableFont_wght.ttf');
+    font-size: 16px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #0a4243;
+    border-color: #eba3a3;
+}
+
+.container h2{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #13676fa9;
+}
+.container p{
+    font-size: 1.2rem;
+    font-family: "norm", sans-serif;
+    padding-top: 20px;
+    text-align: justify;
+    margin: 10px;
+    color: rgb(235, 237, 239);
+}
+.container .end{
+    margin-bottom: 50px;
+}
+.container a{
+    margin-top: 30px;
+    color: rgb(8, 53, 61);
+    font-weight: bold;
+    background-color: #4dcee7;
+    border-style: solid;
+    /* border-color: rgb(221, 70, 70); */
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+.container a:hover{
+    box-shadow: 0 0 10px var(--10color);
+    color: #fff;
+    padding: 10px;
+}
+.student{
+    background-color: rgb(8, 55, 54);
+    padding-bottom: 5px;
+    font-size: var(--text);
+    font-family: "norm", sans-serif;
+    font-size: 20px;
+}
+
+hr{
+    border-color: rgb(35, 148, 173);
+}
+

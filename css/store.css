@@ -1,0 +1,346 @@
+
+.store-header{
+    padding: 0;
+    min-height: 30vh;
+}
+
+/* Styles for form section*/
+.form-wrap{
+    padding-bottom: 6rem;
+}
+.product-form{
+    box-shadow: 0 0 20px var(--30color);
+    padding: 40px;
+    color: white;
+    border-radius: 20px;
+}
+.user-name,
+.user-email{
+    padding: 3rem;
+    text-align: center;
+    float: right;
+}
+.form-wrap label{
+    margin: 0rem 2rem;
+    font-size: 1.4rem;
+}
+.form-wrap input{
+    height: 2.5rem;
+    background: var(--30color);
+    border-radius: 15px;
+    border:solid 1px var(--10color);
+    padding: 0.3rem 3rem;
+    text-align: center;
+    font-size:1rem;
+}
+.form-elements{
+    padding: 0.8rem;
+}
+
+
+
+/*Styles for product sections*/
+.products{
+    padding-bottom: 100px;
+}
+.products h5{
+    margin-left: 150px;
+    border-bottom: solid 2px var(--10color);
+    margin-right: 130px;
+    margin-bottom: 40px;
+}
+
+
+/*Style for product cards*/
+.product-cards{
+    justify-content: center;
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+.wrapper{
+    flex-wrap: wrap;
+}
+.product{
+    box-shadow: 0 0 20px black;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 10px;
+    transition: all 0.5s;
+
+}
+h4{
+    padding-bottom: 5px;
+}
+.product-cards img{
+    border-radius: 30px;
+    width: 200px;
+    padding: 10px;
+
+}
+
+.item-price{
+    padding-bottom: 10px;
+}
+.product:hover{
+    box-shadow: 0 0 30px var(--10color);
+    transition: all 0.5s;
+   
+}
+.buy-button:hover{
+    transform: scale(1.15);
+    transition: all 0.3s;
+}
+.product-cards i{
+    margin-right: 10px;
+}
+
+/*Styles for cart section*/
+.cart-header{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-row{
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+.section-header{
+    text-shadow: var(--10color) 10px 0px 40px;
+}
+
+.cart-item{
+    width: 45%;
+}
+.cart-item i{
+    margin-left: 10px;
+}
+.cart-price{
+    width: 20%;
+    font-size: 1.2rem;
+}
+
+.cart-quantity{
+    width: 35%;
+}
+
+.cart-item-title{
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image{
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger{
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .5em;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color: #CC4C4C;
+}
+.cart-quantity-input{
+    height: 34px;
+    width: 45px;
+    border-radius: 10px;
+    border: 3px solid var(--10color);
+    background-color: var(--30color);
+    color: aliceblue;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-right: 25px;
+}
+
+.cart-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 20%;
+}
+
+.cart-total-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-right: 20px;
+}
+
+.cart-total-price{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.btn-purchase{
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+.hide{
+    display: none;
+}
+
+@media(max-width:800px){
+    .cart-item-title{
+        display: none;
+    }
+}
+.cart-items i{
+    margin-left: 8px;
+}
+.cart-row span{
+    font-family: "normal",sans-serif;
+}
+
+
+/*Styles for invoice section*/
+.invoice-container {
+    margin: 10px;
+    padding: 40px;
+    box-shadow: 0 0 30px var(--10color);
+    height: 100%;
+    border-radius: 10px;   
+}
+.customer-details h6 {
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
+  
+.customer-details p {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+  
+.invoice-details h6 {
+    font-size: 35px;
+    padding: 20px 0px 20px 0px;
+}
+  
+.product-details-invoice p {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+  
+.product-details-invoice p:last-child {
+    padding-bottom: 0;
+}
+  
+.product-details-wrapper {
+    border: 1px solid;
+    padding: 10px 15px 7px 15px;
+    flex-direction: row;
+    border-radius: 20px;
+}
+.invoice-row {
+    padding-bottom: 20px;
+}
+.product-details-invoice {
+    width: 75%;
+}
+  
+.product-image-invoice {
+    width: 25%;
+}
+  
+.product-image-invoice img {
+    margin-right: 80px;
+    width: 75px;
+    border-radius: 15px;
+}
+  
+.invoice-total {
+    padding-top: 20px;
+    font-size: 27px;
+    text-align: center;
+}
+
+/*Animation for button  (https://youtu.be/Nmaw6pBEsI8)*/
+.btn-change,.btn-purchase{
+    padding: 15px 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border: 2px solid white;
+    background: var(--30color);
+    font-size: var(--par);
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    border-radius: 5px;
+    z-index: 0;
+}
+.btn-change,.btn-purchase:hover{
+    color: white;
+}
+.btn-change i{
+    font-size: 25px; 
+    margin-right: 20px;
+}
+.btn-purchase i{
+    margin-right: 20px;
+}
+.btn-change::before{
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--10color);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn-purchase::before{
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--10color);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.btn-change::before{
+    transform: scaleX(0);
+
+}
+.btn-purchase::before{
+    transform: scaleX(0);
+
+}
+.btn-change:hover::before{
+    transform: scaleX(1);
+}
+.btn-purchase:hover::before{
+    transform: scaleX(1);
+}
+
+.invisible{
+    display: none;
+}
