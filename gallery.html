@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixilla | Gallery</title>
+    <link rel="icon" type="image/x-icon" href="./simages/Icon-ico.ico">
+    <link rel="stylesheet" href="./css/global-style.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/material-icon.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./src/logo-title.png">
+</head>
+
+<body>
+
+    <!-- Details in the side-panel -->
+    <section class="dev flex flex-center">
+        <div class="panel-close"><i class="fas fa-times"></i></div>
+        <div class="dev-wrapper">
+            <div class="dev-image flex flex-center">
+                <img src="./src/images/page-editor-images/IMG-20220306-WA0349-01.jpeg" alt="web-dev-img">
+            </div>
+            <div class="dev-name">
+                <h3>Thaveesha Sonnadara</h3>
+            </div>
+            <div class="dev-description">
+                <div class="student-details">
+                    <p>IIT ID: 20222131</p>
+                    <p>UOW ID: w1985729</p>
+                    <p>Student-4</p>
+                </div>
+                <p>List of tasks completed</p>
+                <hr>
+                <p>Task-2b</p>
+                <p>Task-5</p>
+                <p>Task-7</p>
+                <p>Tasks-9b to 15</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation bar -->
+    <nav>
+        <div class="logo"><img src="./src/images/gallery-images/icons/logo.png" alt="logo-image"></div>
+        <ul>
+            <!-- Navigation links -->
+            <li><a href="./Home page.html">Home</a></li>
+            <li><a href="./store.html">Buy Products</a></li>
+            <li><a href="./sitemap.html">Site Map</a></li>
+            <li> <a href="./gallery.html">Gallery</a></li>
+            <li><a href="./GamingQuiz.html">Quiz</a></li>
+            <li><a href="./Quary Form.html">Reach Us</a></li>
+            <li><a href="./StudentDetail.html">About Us</a></li>
+            <!-- Font size control icons -->
+            <li><i class="material-symbols-rounded" id="mode-icon">light_mode</i></li>
+            <li><i class="material-symbols-rounded" id="orange-icon">stop</i></li>
+        </ul>
+    </nav>
+
+    <!-- Video background section -->
+    <div id="video-container">
+        <div class="video-overlay"></div>
+        <!-- Background video -->
+        <video autoplay="" loop="" muted>
+            <source src="./src/final-background-loop.mp4" type="video/mp4">
+        </video>
+        <!-- Video content -->
+        <div class="video-content">
+            <div class="inner flex flex-center flex-column">
+                <!-- Title section -->
+                <div class="title">
+                    <h1>Image<em> Gallery</em></h1>
+                    <p>pick<em> wise</em> | play<em> pride</em></p>
+                </div>
+                <!-- Scroll icon -->
+                <div class="scroll-icon">
+                    <a href="#portfolio" class="scrollTo">
+                        <!-- Scroll icon symbol -->
+                        <i class="material-symbols-rounded" id="expand-more">expand_more</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Font size control buttons -->
+        <div class="font-buttons">
+            <!-- Button to decrease font size -->
+            <span class="btn" onclick=decreseFontSize()>A</span>
+            <!-- Button to set normal font size (active) -->
+            <span class="btn active" onclick=normalFontSize()>A</span>
+            <!-- Button to increase font size -->
+            <span class="btn" onclick=increaseFontSize()>A</span>
+        </div>
+    </div>
+
+    <!-- gallery and slider starts -->
+    <div class="full-screen-portfolio" id="portfolio">
+
+        <!-- gallery starts -->
+        <!-- Gallery container with flexbox layout -->
+        <div class="gallery-container flex flex-column flex-center">
+
+            <!-- first row starts -->
+            <a href="./store.html">
+                <h2>Action <span><i class="material-symbols-rounded">chevron_right</i></span></h2>
+            </a>
+            <div class="row-gallery-item flex flex-center">
+                <!-- Gallery item for 'God of War Ragnarök' -->
+                <div class="gallery-item">
+                    <a href="#slider" id="1" onclick="get_id(this.id)">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <h1>God of War Ragnarök</h1>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./src/images/gallery-images/God-of-war.jpg"
+                                    alt="Game-One-Assassin's-Creed-Ragnarök">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Gallery item for 'Modern Warfare 2' -->
+                <div class="gallery-item">
+                    <a href="#slider" id="2" onclick="get_id(this.id)">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <h1>Modern Warfare 2</h1>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./src/images/gallery-images/COD-MW-2-remasterd.jpg"
+                                    alt="game-two-Call-of-Duty:-Modern-Warfare-2">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Gallery item for 'Far Cry 6' -->
+                <div class="gallery-item">
+                    <a href="#slider" id="3" onclick="get_id(this.id)">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <h1>Far Cry 6</h1>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./src/images/gallery-images/Farcry-6-(1).jpg" alt="game-three-Far-Cry-6">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Gallery item for 'Crysis 3' -->
+                <div class="gallery-item">
+                    <a href="#slider" id="4" onclick="get_id(this.id)">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <h1>Crysis 3</h1>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./src/images/gallery-images/Crysis-3.jpg" alt="game-four-Crysis-3">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Second row for Sports games -->
+            <a href="./store.html">
+                <h2>Sports <span><i class="material-symbols-rounded">chevron_right</i></span></h2>
+            </a>
+            <div class="row-gallery-item flex flex-center" id="row-gallery-item-2">
+                <!-- Gallery item for 'Fifa 23' -->
+                <div class="gallery-item">
+                    <a href="#slider" id="5" onclick="get_id(this.id)">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <h1>Fifa 23</h1>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./src/images/gallery-images/Fifa-23.jpg" alt="game-five-Fifa-23">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Gallery item for 'NBA 2K23' -->
+                <div class="gallery-item">
+                    <a href="#slider" id="6" onclick="get_id(this.id)">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <h1>NBA 2K23</h1>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./src/images/gallery-images/NBA-2k23.jpg" alt="game-six-NBA-2K23">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Gallery item for 'PGA Tour 2K23' -->
+                <div class="gallery-item">
+                    <a href="#slider" id="7" onclick="get_id(this.id)">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <h1>PGA Tour 2K23</h1>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./src/images/gallery-images/pga-tour-2k23.jpg" alt="game-seven-PGA-Tour-2K23">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Third row for Horror games -->
+            <a href="./store.html">
+                <h2>Horror <span><i class="material-symbols-rounded">chevron_right</i></span></h2>
+            </a>
+            <div class="row-gallery-item flex flex-center">
+                <!-- Gallery item for 'Resident Evil 4' -->
+                <div class="gallery-item">
+                    <a href="#slider" id="8" onclick="get_id(this.id)">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <h1>Resident Evil 4</h1>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./src/images/gallery-images/resident-evil-4.jpg" alt="game-eight-Resident-Evil-4">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Gallery item for 'Outlast 2' -->
+                <div class="gallery-item">
+                    <a href="#slider" id="9" onclick="get_id(this.id)">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <h1>Outlast 2</h1>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./src/images/gallery-images/Outlast-2.jpg" alt="game-nine-outlast-2">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fourth row for Racing games -->
+            <a href="./store.html">
+                <h2>Racing <span><i class="material-symbols-rounded">chevron_right</i></span></h2>
+            </a>
+            <div class="row-gallery-item flex flex-center">
+                <!-- Gallery item for 'The Crew Motorfest' -->
+                <div class="gallery-item">
+                    <a href="#slider" id="10" onclick="get_id(this.id)">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <h1>Grid</h1>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./src/images/gallery-images/the-crew-motorfest-(1).jpg"
+                                    alt="game-ten-The-Crew-Motorfest">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Gallery item for 'MotorGP 23' -->
+                <div class="gallery-item">
+                    <a href="#slider" id="11" onclick="get_id(this.id)">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <h1>MotorGP 23</h1>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./src/images/gallery-images/MotorGP23.jpeg" alt="game-eleven-MotorGP-23">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Gallery item for 'F1 22' -->
+                <div class="gallery-item">
+                    <a href="#slider" id="12" onclick="get_id(this.id)">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <h1>F1 22</h1>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./src/images/gallery-images/F1-22.jpg" alt="game-twelve-F1-22">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- gallery ends -->
+
+        <!-- Slider container -->
+        <div class="slider-container flex flex-center flex-column">
+            <h4>Games Descriptions</h4>
+            <div class="slider-wrapper">
+                <!-- Slider with multiple divs -->
+                <div class="slider" id="slider">
+                    <!-- Slide 0 -->
+                    <div class="description-slides">
+                        <img src="./src/images/gallery-images/main-content.png" alt="slide-0">
+                    </div>
+                    <!-- Slide 1 - God of War Ragnarök -->
+                    <div class="description-slides">
+                        <img src="./src/images/gallery-images/slider-images/god-of-war-ragnarok-2.jpg" alt="slide-1">
+                        <div class="text">
+                            <div>
+                                <h3>God of War Ragnarök</h3>
+                                <p>./src/
+                                    His vengeance against the Gods of Olympus years behind him, Kratos now lives as a
+                                    man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world
+                                    that he must fight to survive… and teach his son to do the same. <br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Overwhelmingly Positive (2,344)</em>
+                                    <br>
+                                    <em>ALL REVIEWS: </em><em class="important">Overwhelmingly Positive (74,765)</em>
+                                    <br><br>
+                                    <em>RELEASE DATE: </em><em class="important">14 Jan, 2022</em> <br>
+                                    <em>DEVELOPER: </em><em class="important">Santa Monica Studio</em><br>
+                                    <em>PUBLISHER: </em><em class="important">PlayStation PC LLC</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 - Call Of Duty: Modern Warfare 2 -->
+                    <div class="description-slides">
+                        <img src="./src/images/gallery-images/slider-images/Call-of-Duty-Modern-Warfare-2-2.jpg"
+                            alt="slide-2">
+                        <div class="text">
+                            <div>
+                                <h3>Call Of Duty: Modern Warfare 2</h3>
+                                <p>
+                                    Call of Duty®: Modern Warfare® II drops players into an unprecedented global
+                                    conflict that features the return of the iconic Operators of Task Force 141.<br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Mixed (9,532)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Mixed (229,564)</em><br><br>
+                                    <em>RELEASE DATE: </em><em class="important">28 Oct, 2022</em><br>
+                                    <em>DEVELOPERS: </em><em class="important">Infinity Ward, Raven Software, Beenox,
+                                        Treyarch,<br>High Moon Studios, Sledgehammer Games, Activision Shanghai,
+                                        <br>Demonware, Toys for Bob</em><br>
+                                    <em>PUBLISHER: </em><em class="important">Activision</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 - Far Cry 6 -->
+                    <div class="description-slides"><img src="./src/images/gallery-images/slider-images/FC6jpg-2.jpg"
+                            alt="slide-3">
+                        <div class="text">
+                            <div>
+                                <h3>Far Cry 6</h3>
+                                <p>
+                                    Enter the adrenaline-filled world of a modern-day guerrilla revolution. With
+                                    stunning vistas, visceral gunplay, and a huge variety of gameplay experiences,
+                                    there's never been a better time to join the fight.<br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Mixed (1,447)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Mixed (7,729)</em><br><br>
+                                    <em>RELEASE DATE: </em><em class="important">11 May, 2023</em><br>
+                                    <em>DEVELOPER: </em><em class="important">Ubisoft Toronto, Ubisoft Montreal, Ubisoft
+                                        Kyiv, Ubisoft Shanghai, Ubisoft Berlin</em><br>
+                                    <em>PUBLISHER: </em><em class="important">Ubisoft</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-slides"><img src="./src/images/gallery-images/slider-images/crysis3-2.jpg"
+                            alt="slide-4">
+                        <div class="text">
+                            <div>
+                                <h3>Crysis 3</h3>
+                                <p>
+                                    Experience the single-player experience from the iconic first-person shooter, Crysis
+                                    3, optimized to take advantage of today's hardware in Crysis 3 Remastered.<br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Very Positive (195)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Very Positive (2,195)</em><br><br>
+                                    <em>RELEASE DATE: </em><em class="important">17 Nov, 2022</em><br>
+                                    <em>DEVELOPER: </em><em class="important">Crytek, Saber Interactive</em><br>
+                                    <em>PUBLISHER: </em><em class="important">Crytek</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-slides"><img src="./src/images/gallery-images/slider-images/Fifa23-2.jpg"
+                            alt="slide-5">
+                        <div class="text">
+                            <div>
+                                <h3>Fifa 23</h3>
+                                <p>
+                                    FIFA 23 brings The World's Game to the pitch, with HyperMotion2 Technology, men's
+                                    and women's FIFA World Cup™, women's club teams, cross-play features**, and
+                                    more.<br><br>
+                                    <em>REVIEWS: </em><em class="important">Mixed (8,959)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Mixed (105,170)</em><br><br>
+                                    <em>RELEASE DATE: </em><em class="important">29 Sep, 2022</em><br>
+                                    <em>DEVELOPER: </em><em class="important">EA Canada & EA Romania</em><br>
+                                    <em>PUBLISHER: </em><em class="important">Electronic Arts</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-slides"><img src="./src/images/gallery-images/slider-images/NBA-2K23-2.jpg"
+                            alt="slide-6">
+                        <div class="text">
+                            <div>
+                                <h3>NBA 2K23</h3>
+                                <p>
+                                    Rise to the occasion in NBA 2K23. Showcase your talent in MyCAREER. Pair All-Stars
+                                    with timeless legends in MyTEAM. Build your own dynasty in MyGM, or guide the NBA in
+                                    a new direction with MyLEAGUE. Take on NBA or WNBA teams in PLAY NOW and feel
+                                    true-to-life gameplay.<br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Mixed (3,956)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Mixed (31,817)</em><br><br>
+                                    <em>RELEASE DATE: </em><em class="important">8 Sep, 2022</em><br>
+                                    <em>DEVELOPER: </em><em class="important">Visual Concepts</em><br>
+                                    <em>PUBLISHER: </em><em class="important">2K</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-slides"><img src="./src/images/gallery-images/slider-images/PGA-2K23-02.jpg"
+                            alt="slide-7">
+                        <div class="text">
+                            <div>
+                                <h3>PGA Tour 2K23</h3>
+                                <p>
+                                    Hit the links with more swagger in PGA TOUR 2K23. Now featuring playable male and
+                                    female pros, including Tiger Woods, new licensed courses, more control options, an
+                                    authentic PGA TOUR MyCAREER, Course Designer, and new MyPLAYER Skills and
+                                    Archetypes! PGA TOUR 2K23. More Golf. More Game.<br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Mostly Positive (234)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Mixed (2,006)</em><br><br>
+                                    <em>RELEASE DATE: </em><em class="important">13 Oct, 2022</em><br>
+                                    <em>DEVELOPER: </em><em class="important">HB Studios</em><br>
+                                    <em>PUBLISHER: </em><em class="important">2K</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-slides"><img
+                            src="./src/images/gallery-images/slider-images/resident-evil-remake-2.jpg" alt="slide-8">
+                        <div class="text">
+                            <div>
+                                <h3>Resident Evil 4</h3>
+                                <p>Survival is just the beginning. Six years have passed since the biological disaster
+                                    in Raccoon City. Leon S. Kennedy, one of the survivors, tracks the president's
+                                    kidnapped daughter to a secluded European village, where there is something terribly
+                                    wrong with the locals.<br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Overwhelmingly Positive
+                                        (1,426)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Overwhelmingly Positive
+                                        (53,773)</em><br><br>
+                                    <em>RELEASE DATE: </em><em class="important">24 Mar, 2023</em><br>
+                                    <em>DEVELOPER: </em><em class="important">CAPCOM Co., Ltd.</em><br>
+                                    <em>PUBLISHER: </em><em class="important">CAPCOM Co., Ltd.</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-slides"><img src="./src/images/gallery-images/slider-images/Outlast2-2.jpg"
+                            alt="slide-9">
+                        <div class="text">
+                            <div>
+                                <h3>Outlast 2</h3>
+                                <p>Outlast 2 introduces you to Sullivan Knoth and his followers, who left our wicked
+                                    world behind to give birth to Temple Gate, a town, deep in the wilderness and hidden
+                                    from civilization. Knoth and his flock are preparing for the tribulations of the end
+                                    of times and you're right in the thick of it.<br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Very Positive (701)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Very Positive (36,934)</em><br><br>
+                                    <em>RELEASE DATE: </em><em class="important">25 Apr, 2017</em><br>
+                                    <em>DEVELOPER: </em><em class="important">Red Barrels</em><br>
+                                    <em>PUBLISHER: </em><em class="important">Red Barrels</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-slides"><img
+                            src="./src/images/gallery-images/slider-images/The-Crew-Motorfest-2.jpg" alt="slide-10">
+                        <div class="text">
+                            <div>
+                                <h3>The Crew Motorfest</h3>
+                                <p>Take on the American motorsports scene as you explore and dominate the land, air, and
+                                    sea across the entire USA. With a wide variety of cars, bikes, boats, and planes,
+                                    compete in a wide range of driving disciplines.<br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Very Positive (1,924)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Very Positive (57,240)</em><br><br>
+                                    <em>RELEASE DATE: </em><em class="important">29 Jun, 2018</em><br>
+                                    <em>DEVELOPER: </em><em class="important">Ivory Tower</em><br>
+                                    <em>PUBLISHER: </em><em class="important">Ubisoft</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-slides"><img src="./src/images/gallery-images/slider-images/MotoGP-23-2.jpg"
+                            alt="slide-11">
+                        <div class="text">
+                            <div>
+                                <h3>MotorGP 23</h3>
+                                <p>Open the throttle, pass your opponents and cross the finish line: live the dream of
+                                    being the next champion with the new MotoGP™23, more amazing and challenging than
+                                    ever!<br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Mostly Positive (53)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Mostly Positive (165)</em><br><br>
+                                    <em>RELEASE DATE: </em><em class="important">8 Jun, 2023</em><br>
+                                    <em>DEVELOPER: </em><em class="important">Milestone S.r.l.</em><br>
+                                    <em>PUBLISHER: </em><em class="important">Milestone S.r.l.</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-slides"><img src="./src/images/gallery-images/slider-images/F1-22-2.jpg"
+                            alt="slide-12">
+                        <div class="text">
+                            <div>
+                                <h3>F1® 22</h3>
+                                <p>Enter the new era of Formula 1® in EA SPORTS™ F1® 22 the official videogame of the
+                                    2022 FIA Formula One World Championship™.<br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Mixed (393)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Mixed (19,696)</em><br><br>
+                                    <em>RELEASE DATE: </em><em class="important">1 Jul, 2022</em><br>
+                                    <em>DEVELOPER: </em><em class="important">Codemasters</em><br>
+                                    <em>PUBLISHER: </em><em class="important">Electronic Arts</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-slides"><img
+                            src="./src/images/gallery-images/elden-ring/wallpaperflare.com_wallpaper-(1).jpg" alt="slide-13">
+                        <div class="text">
+                            <div>
+                                <h3>Elden Ring</h3>
+                                <p>THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the
+                                    power of the Elden Ring and become an Elden Lord in the Lands Between.<br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Very Positive (10,163)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Very Positive (518,266)</em><br><br>
+                                    <em>RELEASE DATE: </em><em class="important">25 Feb, 2022</em><br>
+                                    <em>DEVELOPER: </em><em class="important">FromSoftware Inc.</em><br>
+                                    <em>PUBLISHER: </em><em class="important">FromSoftware Inc., Bandai Namco
+                                        Entertainment</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-slides"><img
+                            src="./src/images/gallery-images/Last-of-us/cropped-1920-1080-1313389.png" alt="slide-14">
+                        <div class="text">
+                            <div>
+                                <h3>The Last of Us Part II</h3>
+                                <p>The Last of Us Part II is a 2020 action-adventure game developed by Naughty Dog and
+                                    published by Sony Interactive Entertainment for the PlayStation 4.<br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Very Positive (10,163)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Very Positive (518,266)</em><br><br>
+                                    <em>Release date: </em><em class="important">June 19, 2020</em><br>
+                                    <em>Platform: </em><em class="important">PlayStation 4</em><br>
+                                    <em>Series: </em><em class="important">The Last of Us</em><br>
+                                    <em>Developer: </em><em class="important">Naughty Dog</em><br>
+                                    <em>Awards: </em><em class="important">The Game Award for Game of the Year</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-slides"><img src="./src/images/gallery-images/God-of-War/1308958.jpeg"
+                            alt="slide-15">
+                        <div class="text">
+                            <div>
+                                <h3>God of War</h3>
+                                <p>His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man
+                                    in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that
+                                    he must fight to survive… and teach his son to do the same.<br><br>
+                                    <em>RECENT REVIEWS: </em><em class="important">Overwhelmingly Positive
+                                        (2,324)</em><br>
+                                    <em>ALL REVIEWS: </em><em class="important">Overwhelmingly Positive
+                                        (74,806)</em><br><br>
+                                    <em>RELEASE DATE: </em><em class="important">14 Jan, 2022</em><br>
+                                    <em>DEVELOPER: </em><em class="important">Santa Monica Studio</em><br>
+                                    <em>PUBLISHER: </em><em class="important">PlayStation PC LLC</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- manual controllers of the slider -->
+
+                <div class="controls">
+                    <span class="arrow left">
+                        <i class="material-symbols-rounded">chevron_left</i>
+                    </span>
+                    <span class="arrow right">
+                        <i class="material-symbols-rounded">chevron_right</i>
+                    </span>
+                    <ul>
+                        <li class="selected"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- game of the year section -->
+
+        <div class="game-of-the-year">
+            <h2>Game of The Years</h2>
+            <div class="goty-items">
+                <div class="goty-item">
+
+                    <div class="main-image">
+                        <a href="#slider" id="13" onclick="get_id(this.id)">
+                            <img src="./src/images/gallery-images/elden-ring.jpg" alt="elden-ring">
+                        </a>
+                    </div>
+
+                    <div class="goty-descreption">
+                        <h5>Elden Ring</h5>
+                        <p>Elden Ring, FromSoftware's open-world magnum opus, won the Game of the Year award at The Game
+                            Awards 2022.</p>
+                        <div class="more-images flex flex-center">
+                            <div class="small-image-item">
+                                <img src="./src/images/gallery-images/elden-ring/elden-ring-playstation-hd-wallpaper-thumb.jpg"
+                                    alt="elden-ring-image-1">
+                            </div>
+                            <div class="small-image-item">
+                                <img src="./src/images/gallery-images/elden-ring/wallpaperflare.com_wallpaper-(1).jpg"
+                                    alt="elde- ring-image-2">
+                            </div>
+                            <div class="small-image-item">
+                                <img src="./src/images/gallery-images/elden-ring/elden-ring-video-game-photography-hd-wallpaper-thumb.jpg"
+                                    alt="elden-ring-image-3">
+                            </div>
+                            <div class="small-image-item">
+                                <img src="./src/images/gallery-images/elden-ring/wallpaperflare.com_wallpaper.jpg"
+                                    alt="elden-ring-image-4">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="goty-item">
+
+                    <div class="goty-descreption">
+                        <h5>The Last of Us Part II</h5>
+                        <p>The Last of Us Part II is a 2020 action-adventure game developed by Naughty Dog and published
+                            by Sony Interactive Entertainment.
+                            The game led the nominees for The Game Awards 2020 with 11 nominations, of which it won
+                            seven, the most in the show's history.
+                        </p>
+                        <div class="more-images flex flex-center">
+                            <div class="small-image-item">
+                                <img src="./src/images/gallery-images/Last-of-us/cropped-1920-1080-1043984.jpg"
+                                    alt="last-of-us-part-2-image-1">
+                            </div>
+                            <div class="small-image-item">
+                                <img src="./src/images/gallery-images/Last-of-us/cropped-1920-1080-1313389.png"
+                                    alt="last-of-us-part-2-image-1">
+                            </div>
+                            <div class="small-image-item">
+                                <img src="./src/images/gallery-images/Last-of-us/cropped-1920-1080-1065467.png"
+                                    alt="last-of-us-part-2-image-1">
+                            </div>
+                            <div class="small-image-item">
+                                <img src="./src/images/gallery-images/Last-of-us/cropped-1920-1080-1313399.png"
+                                    alt="last-of-us-part-2-image-1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-image">
+                        <a href="#slider" id="14" onclick="get_id(this.id)">
+                            <img src="./src/images/gallery-images/The-Last-of-Us-Part-II.jpg" alt="last-of-us-part-2">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="goty-item">
+
+                    <div class="main-image">
+                        <a href="#slider" id="15" onclick="get_id(this.id)">
+                            <img src="./src/images/gallery-images/God-of-War-2018.jpg" alt="god-of-war-2018">
+                        </a>
+                    </div>
+
+                    <div class="goty-descreption">
+                        <h5>God of War 2018</h5>
+                        <p>God of War Wins Game of the Year in 2018. Sony Santa Monica's reinvention of God of War takes
+                            home the night's big prize.</p>
+                        <div class="more-images flex flex-center">
+                            <div class="small-image-item">
+                                <img src="./src/images/gallery-images/God-of-War/1173141.jpg" alt="god-of-war-2018-image-1">
+                            </div>
+                            <div class="small-image-item">
+                                <img src="./src/images/gallery-images/God-of-War/1308958.jpeg" alt="god-of-war-2018-image-1">
+                            </div>
+                            <div class="small-image-item">
+                                <img src="./src/images/gallery-images/God-of-War/cropped-1920-1080-1176271.jpg"
+                                    alt="god-of-war-2018-image-1">
+                            </div>
+                            <div class="small-image-item">
+                                <img src="./src/images/gallery-images/God-of-War/cropped-1920-1080-1308945.jpeg"
+                                    alt="god-of-war-2018-image-1">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scroll to top button -->
+    <div onclick="scrollToTop()" class="scrollTop">
+        <i class="material-symbols-rounded">expand_less</i>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-col-1">
+            <h3>Page Developer</h3>
+            <p><a class="view-editor">Thaveesha Sonnadara</a></p>
+        </div>
+        <div class="footer-col-2">
+            <img src="./src/logo.png" width="100" height="75" alt="logo">
+            <hr>
+            <p>© 2023 Pixilla Corporation.</p>
+            <p>All trademarks are property of their respective owners in the Sri Lanka and other countries.</p>
+            <p>All rights reserved.</p>
+            <hr>
+        </div>
+        <!-- Column for social media icons -->
+        <div class="footer-col-3">
+            <h3>Follow Us On</h3>
+            <div class="social icons">
+                <img src="./src/FacebookLogo.png" alt="facebook logo">
+                <img src="./src/InstagramLogo.png" alt="Instagram logo">
+                <img src="./src/TwitterLogo.png" alt="twitter logo">
+                <img src="./src/TiktokLogo.png" alt="tiktok logo">
+                <img src="./src/RedditLogo.png" alt="Reddit logo">
+            </div>
+        </div>
+    </div>
+
+    <!-- global script -->
+    <script src="./js/global.js"></script>
+    <!-- linking external javascript file -->
+    <script src="./js/gallery.js"></script>
+    <script src="./js/theme-mode.js"></script>
+</body>
+
+</html>

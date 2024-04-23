@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>PIXILLA | Gaming quiz</title>
+    <link rel="icon" type="image/x-icon" href="./src/logo-title.png">
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="./css/GamingQuiz.css">
+    <link rel="stylesheet" href="./css/global-style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body> 
+     <!-- Details in the side-panel -->
+     <section class="dev flex flex-center">
+        <div class="panel-close"><i class="fas fa-times"></i></div>
+        <div class="dev-wrapper">
+          <div class="dev-image flex flex-center">
+            <img src="./src/Img/mypic.jpg" alt="web-dev img">
+          </div>
+          <div class="dev-name">
+            <h3>Himan Welgama</h3>
+          </div>
+          <div class="dev-description">
+            <div class="student-details">
+              <p>IIT ID: 20221109</p>
+              <p>UOW ID: w1998723</p>
+              <p>Student-3</p>
+            </div>
+            <p>List of tasks completed</p>
+            <hr>
+            <p>Task-2b</p>
+            <p>Task-6</p>
+            <p>Task-8</p>
+            <p>Tasks-9b to 15</p>
+          </div>
+        </div>
+      </section>  
+<!-- Navigation bar -->
+<nav>
+    <div class="logo"><img src="./src/logo.png" alt="logo"></div>
+    <ul>
+         <!-- Links to various sections of the website -->
+        <li><a href="./Home page.html">Home</a></li>
+        <li><a href="./store.html">Buy Products</a></li>
+        <li><a href="./sitemap.html">Site Map</a></li>
+        <li> <a href="./gallery.html">Gallery</a></li>
+        <li><a href="./GamingQuiz.html">Quiz</a></li>
+        <li><a href="./Quary Form.html">Reach Us</a></li>
+        <li><a href="./StudentDetail.html">About Us</a></li>
+    </ul>
+</nav>
+
+<!-- Main content container -->
+<div class="container">
+    <!-- Start screen -->
+    <div class="start-screen">
+        <img src="./src/Img/pngegg.png" alt="background image1" class="bacground-img">
+        <button id="start-button" class="start-button"><img src="./src/Img/start-gf6def1c2f_1280.png" alt="start button"></button>
+    </div>
+
+    <!-- Quiz main container -->
+    <div id="main-container">
+        <!-- Header section with question count and timer -->
+        <div class="header">
+            <div class="number-of-count">
+                <span class="number-of-question">
+                    1 of 10 questions
+                </span>
+            </div>
+            <div class="timer">
+                <img src="./src/Img/timer.jpg" alt="timer icon">
+                <span class="timer-left"></span>
+            </div>
+        </div>
+        <hr>
+        <!-- Quiz container to display questions -->
+        <div id="quiz-container">
+        </div>
+        <!-- Button to move to the next question -->
+        <button id="next-button" class="quiz-button">Next</button>
+    </div>
+
+    <!-- Result container to display the final score -->
+    <div class="result-container hide">
+        <div id="user-score">Demo Score</div>
+        <button id="restart-button" class="restart-button">
+            <!-- Link to restart the quiz -->
+            <a href="./GamingQuiz.html" class="restart-link">Try Again</a>
+        </button>
+    </div>
+</div>
+
+
+<!-- Footer section -->
+<div class="footer">
+    <!-- Footer column 1 with developer information -->
+    <div class="footer-col-1">
+        <h3>Page Developer</h3>
+        <h3><a class="view-editor">Himan Welgama</a></h3>
+    </div>
+    <!-- Footer column 2 with copyright and logo -->
+    <div class="footer-col-2">
+        <img src="./src/logo.png" width="100" height="75" alt="logo">
+        <hr>
+        <p>© 2023 Pixilla Corporation.</p>
+        <p>All trademarks are property of their respective owners in the Sri Lanka and other countries.</p>
+        <p>All rights reserved.</p>
+        <hr>
+    </div>
+    <!-- Column for social media icons -->
+    <div class="footer-col-3">
+        <h3>Follow Us On</h3>
+        <div class="social icons">
+            <img src="./src/FacebookLogo.png" alt="facebook logo">
+            <img src="./src/InstagramLogo.png" alt="Instagram logo">
+            <img src="./src/TwitterLogo.png" alt="twitter logo">
+            <img src="./src/TiktokLogo.png" alt="tiktok logo">
+            <img src="./src/RedditLogo.png" alt="Reddit logo">
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript files -->
+<script src="./js/questions.js"></script>   
+<script src="./js/GamingQuiz.js"></script>
+<script src="./js/global.js"></script>
+
+</body>
+</html>

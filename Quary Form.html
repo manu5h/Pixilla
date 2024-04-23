@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXILLA | Contact us</title>
+    <link rel="stylesheet" href="./css/global-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/Quary Form Styles.css">
+    <link rel="icon" type="image/x-icon" href="./src/logo-title.png">
+</head>
+
+<body>
+    <section class="dev flex flex-center">
+        <div class="panel-close"><i class="fas fa-times"></i></div>
+        <div class="dev-wrapper">
+          <div class="dev-image flex flex-center">
+            <img src="./src/manusha.jpg" alt="web-dev img">
+          </div>
+          <div class="dev-name">
+            <h3>Manusha</h3>
+          </div>
+          <div class="dev-description">
+            <div class="student-details">
+              <p>IIT ID: 20221575</p>
+              <p>UOW ID: w1998738</p>
+              <p>Student-2</p>
+            </div>
+            <p>List of tasks completed</p>
+            <hr>
+            <p>Task-1</p>
+            <p>Task-2a</p>
+            <p>Task-4</p>
+            <p>Tasks-9b to 15</p>
+          </div>
+        </div>
+      </section>
+      <nav>
+        <div class="logo"><img src="./src/logo.png" alt="logo"></div>
+        <ul>
+             <!-- Links to various sections of the website -->
+            <li><a href="./Home page.html">Home</a></li>
+            <li><a href="./store.html">Buy Products</a></li>
+            <li><a href="./sitemap.html">Site Map</a></li>
+            <li> <a href="./gallery.html">Gallery</a></li>
+            <li><a href="./GamingQuiz.html">Quiz</a></li>
+            <li><a href="./Quary Form.html">Reach Us</a></li>
+            <li><a href="./StudentDetail.html">About Us</a></li>
+        </ul>
+    </nav>
+    <br><br><br>
+     <!-- Query Form Section -->     <!-- taken from youtube (https://youtu.be/524ycUqs3f0)-->
+    <div class="div-1">
+        <form id="myForm">
+            <!-- Input field for name -->
+            <div class="input-group">
+                <input type="text" id="username" required>
+                <label for="username">Your Name</label>
+            </div>
+            <!-- Input field for email -->
+            <div class="input-group">
+                <input type="email" id="useremail" required>
+                <label for="useremail">E-mail ID</label>
+            </div>
+            <!-- Dropdown selection for favorite genre -->
+            <div class="input-group">
+                <label for="Fav">Your Favourite Genre</label>
+                <select id="Fav" name="Fav">
+                    <option value="Action">Action</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Racing">Racing</option>
+                </select>
+            </div>
+            <!-- Textarea for user thoughts -->
+            <div class="input-group">
+                <textarea id="message" rows="8"></textarea>
+                <label for="message">Your Thoughts</label>
+            </div>
+            <button type="reset">Reset</button>
+        </form> 
+        <button id="submit">Submit</button>  
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="footer-col-1">
+            <h3>Page Developer</h3>
+            <p><a class="view-editor">Manusha Upekshana</a></p>
+        </div>
+        <div class="footer-col-2">
+            <img src="./src/logo.png" width="100" height="75" alt="logo">
+            <hr>
+            <p>© 2023 Pixilla Corporation.</p>
+            <p>All trademarks are property of their respective owners in the Sri Lanka and other countries.</p>
+            <p>All rights reserved.</p>
+            <hr>
+        </div>
+        <div class="footer-col-3">
+            <h3>Follow Us On</h3>
+            <div class="social icons">
+                <img src="./src/FacebookLogo.png" alt="facebook logo">
+                <img src="./src/InstagramLogo.png" alt="instagram logo">
+                <img src="./src/TwitterLogo.png" alt="twitter logo">
+                <img src="./src/TiktokLogo.png" alt="tiktok logo">
+                <img src="./src/RedditLogo.png" alt="reddit logo">
+            </div>
+        </div>
+    </div>
+    <script src="./js/quaryForm.js"></script>
+    <script src="./js/global.js" async></script>
+</body>
+</html>

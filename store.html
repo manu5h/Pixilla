@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PIXILLA | Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links to the External style sheets -->
+    <link rel="stylesheet" href="./css/global-style.css">
+    <link rel="stylesheet" href="./css/store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="image/x-icon" href="./src/logo-title.png">
+    <script src="./js/store.js" async></script>
+</head>
+<body>
+    <!-- Details in the side-panel  -->
+    <section class="dev flex flex-center">
+        <div class="panel-close"><i class="fas fa-times"></i></div>
+        <div class="dev-wrapper">
+          <div class="dev-image flex flex-center">
+            <img src="./src/ashen-img.jpg" alt="web-dev img">
+          </div>
+          <div class="dev-name">
+            <h3>Ashen</h3>
+          </div>
+          <div class="dev-description">
+            <div class="student-details">
+              <p>IIT ID: 20221717</p>
+              <p>UOW ID: w1999518</p>
+              <p>Student-1</p>
+            </div>
+            <p>List of tasks completed</p>
+            <hr>
+            <p>Task-1</p>
+            <p>Task-2a</p>
+            <p>Task-4</p>
+            <p>Tasks-9b to 15</p>
+          </div>
+        </div>
+      </section>
+      <!-- Navigation-bar  -->
+      <nav>
+        <div class="logo"><img src="./src/logo.png" alt="logo"></div>
+        <ul>
+             <!-- Links to various sections of the website -->
+            <li><a href="./Home page.html">Home</a></li>
+            <li><a href="./store.html">Buy Products</a></li>
+            <li><a href="./sitemap.html">Site Map</a></li>
+            <li> <a href="./gallery.html">Gallery</a></li>
+            <li><a href="./GamingQuiz.html">Quiz</a></li>
+            <li><a href="./Quary Form.html">Reach Us</a></li>
+            <li><a href="./StudentDetail.html">About Us</a></li>
+        </ul>
+    </nav>
+    <!--Form section-->>
+    <div class="store-header flex flex-center">
+        <h1 class="pro-head" id="for-to-top">Get Yours</h1>
+    </div>
+    <div class="page-content">
+        <div class="form-wrap flex flex-center">
+            <div class="product-form">
+                <form class="user-form">
+                    <div class="form-elements">
+                        <label for="user-name">Name  : </label>
+                        <input type="text" id="user-name" placeholder="Your Name">
+                    </div>
+                    <div class="form-elements">
+                        <label for="user-email">E-mail: </label>
+                        <input type="text" id="user-email" placeholder="Your Email">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Action games card section-->
+        <section class="products wrapper">
+            <h5>Action</h5>
+            <!--product cards-->
+            <div class="product-cards">
+                <div class=" product">
+                    <div class="product-card">
+                        <img class="pro-card-img" src="./src/unity.jpg" alt="AC unity ico">
+                        <div class="product-details">
+                            <h4 class="pro-title">Assasins creed Unity</h4>
+                            <span class="item-price flex flex-center">$23.99</span>
+                            <button class="buy-button"><i class="fa-solid fa-cart-shopping fa-beat"></i>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" product">
+                    <div class="product-card">
+                        <img class="pro-card-img" src="./src/crysis.jpg" alt="Crysiss ico">
+                        <div class="product-details">
+                            <h4 class="pro-title">Crysis 3</h4>
+                            <span class="item-price flex flex-center">$32.99</span>
+                            <button class="buy-button"><i class="fa-solid fa-cart-shopping fa-beat"></i>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" product">
+                    <div class="product-card">
+                        <img class="pro-card-img" src="./src/Modernwarfare.jpg" alt="Modern warfare">
+                        <div class="product-details">
+                            <h4 class="pro-title">COD ModernWarfare II</h4>
+                            <span class="item-price flex flex-center">$69.99</span>
+                            <button class="buy-button"><i class="fa-solid fa-cart-shopping fa-beat"></i>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" product">
+                    <div class="product-card">
+                        <img class="pro-card-img" src="./src/farcry.jpg" alt="Farcry ico">
+                        <div class="product-details">
+                            <h4 class="pro-title">Farcry6</h4>
+                            <span class="item-price flex flex-center">$45.99</span>
+                            <button class="buy-button"><i class="fa-solid fa-cart-shopping fa-beat"></i>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" product">
+                    <div class="product-card">
+                        <img class="pro-card-img"  src="./src/godofwar.jpg" alt="GOW ico">
+                        <div class="product-details">
+                            <h4 class="pro-title">God of war</h4>
+                            <span class="item-price flex flex-center">$50.99</span>
+                            <button class="buy-button"><i class="fa-solid fa-cart-shopping fa-beat"></i>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--gaming devices card section-->
+        <section class="products wrapper">
+            <h5>Devices</h5>
+            <!--product cards-->
+            <div class="product-cards">
+                <div class=" product">
+                    <div class="product-card">
+                        <img class="pro-card-img" src="./src/mouse.jpg" alt="Computer Mouse">
+                        <div class="product-details">
+                            <h4 class="pro-title">MSI Mouse</h4>
+                            <span class="item-price flex flex-center">$20.99</span>
+                            <button class="buy-button"><i class="fa-solid fa-cart-shopping fa-beat"></i>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" product">
+                    <div class="product-card">
+                        <img class="pro-card-img" src="./src/msikeyboard.jpg" alt="Keyboard">
+                        <div class="product-details">
+                            <h4 class="pro-title">MSI keyboard</h4>
+                            <span class="item-price flex flex-center">$45.98</span>
+                            <button class="buy-button "><i class="fa-solid fa-cart-shopping fa-beat"></i>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" product">
+                    <div class="product-card">
+                        <img class="pro-card-img" src="./src/headset1.jpg" alt="Headset">
+                        <div class="product-details">
+                            <h4 class="pro-title">MSI Headset</h4>
+                            <span class="item-price flex flex-center">$12.99</span>
+                            <button class="buy-button "><i class="fa-solid fa-cart-shopping fa-beat"></i>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" product">
+                    <div class="product-card">
+                        <img class="pro-card-img" src="./src/psdevice.jpg" alt="Controller">
+                        <div class="product-details">
+                            <h4 class="pro-title">MSI Controller</h4>
+                            <span class="item-price flex flex-center">$350.55</span>
+                            <button class="buy-button"><i class="fa-solid fa-cart-shopping fa-beat"></i>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" product">
+                    <div class="product-card">
+                        <img class="pro-card-img"  src="./src/mic.jpg" alt="Mic">
+                        <div class="product-details">
+                            <h4 class="pro-title">MSI Mic</h4>
+                            <span class="item-price flex flex-center">$9.59</span>
+                            <button class="buy-button"><i class="fa-solid fa-cart-shopping fa-beat"></i>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header flex flex-center">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+                
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total:</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button"><i class="fa-solid fa-cart-shopping"></i>PURCHASE</button>
+        </section>
+    </div>
+
+    <div class="invoice-content flex flex-center flex-column  invisible ">
+        <div class="invoice-container">
+          <div class="customer-details">
+            <h6>Customer Details</h6>
+            <p class="customer-name-invoice"></p>
+            <p class="customer-email-invoice"></p>
+          </div>
+          <div class="invoice-details">
+            <h6>Invoice Details</h6>
+            <div class="invoice-rows"></div>
+            <div class="invoice-total"><strong>Total Bill : </strong> $100</div>
+          </div>
+        </div>
+        <button class="btn btn-edit btn-change">
+            <i class="fa-solid fa-pen-clip"></i>Change Order
+        </button>
+      </div>
+      
+      <!-- "To Top" button to scroll back to the top of the page -->
+    <div class="to-top">
+        <a href="#for-to-top"><img src="./src/To-top1.png" onmouseover="this.src='./src/To-top2.png'"
+                onmouseout="this.src='./src/To-top1.png'" width="4%"
+                style="float: right; margin-right: 20px; margin-top: -35px;" alt="back to top"></a>
+    </div>
+      <!-- Footer  -->
+      <div class="footer">
+        <div class="footer-col-1">
+            <h3>Page Developer</h3>
+            <p><a class="view-editor">Ashen Himeshana</a></p>
+        </div>
+        <div class="footer-col-2">
+            <img src="./src/logo.png" width="100" height="75" alt="Logo">
+            <hr>
+            <p>© 2023 Pixilla Corporation.</p>
+            <p>All trademarks are property of their respective owners in the Sri Lanka and other countries.</p>
+            <p>All rights reserved.</p>
+            <hr>
+        </div>
+        <div class="footer-col-3">
+            <h3>Follow Us On</h3>
+            <div class="social icons">
+                <img src="./src/FacebookLogo.png" alt="FB-logo">
+                <img src="./src/InstagramLogo.png" alt="Instr-Logo">
+                <img src="./src/TwitterLogo.png" alt="Twitter-logo">
+                <img src="./src/TiktokLogo.png " alt="Tiktok-logo">
+                <img src="./src/RedditLogo.png" alt="reddit-logo">
+            </div>
+        </div>
+    </div>
+    <script src="./js/global.js" async></script>
+</body>
+</html>
